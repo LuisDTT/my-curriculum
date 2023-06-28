@@ -1,0 +1,70 @@
+{
+	"sideHeader.jobTitle": "Desarrollador - Front-end",
+	"sideHeader.menu.home": "Inicio",
+	"sideHeader.menu.resume": "Estudios",
+	"sideHeader.menu.portfolio": "Portafolio",
+	"sideHeader.menu.contact": "Contacto",
+	"sideHeader.getInTouch": "Ponerse en contacto",
+
+	"homeBody.h1": "Hola, Soy ",
+	"homeBody.aboutMe": "Como front-end junior, estoy motivado por una mentalidad autodidacta y siempre busco ampliar mi conjunto de habilidades y adoptar nuevas tecnologías. Me apasiona resolver problemas y enfrento los desafíos utilizando las mejores prácticas para un desarrollo eficiente. Estoy comprometido en mantenerme actualizado con las últimas tendencias de la industria, lo que me permite crear soluciones innovadoras que brindan experiencias de usuario excepcionales.",
+	"homeBody.btn": "Descargar CV",
+	"homeBody.interests": "Mis intereses",
+	"homeBody.interests.webDevelopment": "Desarrollo web",
+	"homeBody.interests.uIDesign": "Diseño de interfaces de usuario",
+	"homeBody.interests.webAccessibility": "Accesibilidad web",
+	"homeBody.interests.frameworksAndTools": "Frameworks y herramientas",
+	"homeBody.interests.techUpgrades": "Actualizaciones tecnológicas",
+	"homeBody.whatIDo": "¿A qué me dedico?",
+	"homeBody.whatIDo.uIDevelopment": "Desarrollo de la interfaz de usuario",
+	"homeBody.whatIDo.webLayout": "Maquetación y diseño web",
+	"homeBody.whatIDo.responsiveDesign": "Desarrollo responsive",
+	"homeBody.whatIDo.performanceOptimization": "Optimización de rendimiento",
+	"homeBody.whatIDo.upgrades": "Mantenimiento y actualización",
+
+	"homeBody.whatIDo.uIDevelopment.text": "Soy un apasionado desarrollador de interfaz de usuario (UI). Mi objetivo es crear experiencias digitales excepcionales y atractivas para los usuarios.",
+	"homeBody.whatIDo.webLayout.text": "En mi rol como frontend developer, he trabajado en la traducción de diseños de UX/UI en código utilizando lenguajes de marcado como HTML y lenguajes de estilo como CSS. Además, he implementado interacciones y funcionalidades utilizando JavaScript para mejorar la experiencia del usuario.",
+	"homeBody.whatIDo.responsiveDesign.text": "Colaboro estrechamente con equipos diversos, trabajando en conjunto con diseñadores de UX/UI y otros desarrolladores para asegurar la coherencia y la calidad del producto final. Mi enfoque se centra en hacer que los sitios web y las aplicaciones sean responsivos, adaptándose sin problemas a diferentes dispositivos y tamaños de pantalla.",
+	"homeBody.whatIDo.performanceOptimization.text": "Soy hábil en la optimización de la interfaz, garantizando una rápida carga y una navegación fluida. Además de mis habilidades fundamentales, tengo experiencia en el uso de frameworks y librerías populares como React. También estoy familiarizado con herramientas de desarrollo como Sass y Less, que me permiten escribir y organizar el código CSS de manera eficiente.",
+	"homeBody.whatIDo.upgrades.text": "Tengo la capacidad de mantener interfaces existentes de manera efectiva, corregir errores, implementar mejoras y mantener la funcionalidad y apariencia óptimas a lo largo del tiempo. Estoy comprometido en seguir aprendiendo y aplicando las mejores prácticas en este campo en constante evolución.",
+
+	"resumeBody.header": "Curriculum",
+	"resumeBody.education": "Estudios",
+
+	"resumeBody.education.currentTime": "{time} - Actualidad",
+	"resumeBody.education.universityName": "Universidad de {university}",
+	"resumeBody.education.technician": "Técnico en desarrollo de software",
+	"resumeBody.education.technician.text": "Aquí fue donde inicié mi carrera como desarrollador, adquiriendo conocimientos en los fundamentos básicos de la programación y y aprendiendo a manejar lenguajes como HTML, CSS, Python y JavaScript.",
+
+	"resumeBody.education.engineering": "Ingenieria En Sistemas",
+	"resumeBody.education.engineering.text": "Mi objetivo principal es obtener mi título de ingeniero, aprovechando al máximo esta oportunidad para adquirir conocimientos sólidos y habilidades prácticas en el campo de la ingeniería y la programación.",
+
+	"resumeBody.education.frontend": "Especialización Front-End",
+	"resumeBody.education.frontend.text": "Pude aplicar mis conocimientos en proyectos prácticos y adquirir experiencia en el desarrollo de aplicaciones web utilizando React. Esta experiencia me ha brindado una base sólida para seguir creciendo y explorando nuevos avances en el desarrollo de aplicaciones web.",
+
+	"resumeBody.experience": "Experiencia",
+
+	"resumeBody.experience.system": "Técnico en sistemas",
+	"resumeBody.experience.system.text": "Como técnico en sistemas, enfrenté desafíos emocionantes y aprendizajes constantes. Me sumergí en la resolución de problemas, brindando soporte técnico y mejorando la infraestructura informática. Cada día es una oportunidad para aplicar mis conocimientos, colaborar en equipo y crecer profesionalmente.",
+
+	"resumeBody.skills": "Habilidades en codigo",
+	"resumeBody.knowledges": "Conocimientos y habilidades",
+
+	"resumeBody.knowledges.analyticalThinking": "Pensamiento analítico",
+	"resumeBody.knowledges.flexibility": "Flexibilidad",
+	"resumeBody.knowledges.responsive": "Diseño responsivo",
+	"resumeBody.knowledges.selfLearning": "Autodidacta",
+	"resumeBody.knowledges.git": "Git / Github",
+	"resumeBody.knowledges.agile": "Agile",
+	"resumeBody.knowledges.scrum": "Scrum",
+	"resumeBody.knowledges.teamwork": "Trabajo en equipo",
+	"resumeBody.knowledges.leadership": "Liderazgo",
+	"resumeBody.knowledges.organization": "Organización",
+	"resumeBody.knowledges.innovation": "Innovación",
+
+	"resumeBody.languages": "Idiomas",
+	"resumeBody.languages.es": "Español: (Nativo)",
+	"resumeBody.languages.en": "Ingles: (capacidad de trabajo profesional)",
+
+	"resumeBody.certificates": "Certificados"
+}

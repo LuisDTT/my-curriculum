@@ -1,0 +1,72 @@
+{
+	"sideHeader.jobTitle": "Front-end / Developer",
+	"sideHeader.menu.home": "Home",
+	"sideHeader.menu.resume": "Resume",
+	"sideHeader.menu.portfolio": "Portfolio",
+	"sideHeader.menu.contact": "Contact",
+	"sideHeader.getInTouch": "Get in touch",
+
+	"homeBody.h1": "Hi, I'm ",
+	"homeBody.aboutMe": "Driven by a self-taught mindset, I thrive on constantly expanding my skill set and embracing new technologies. With a deep passion for problem-solving, I approach challenges with a wealth of experience and a solid foundation in best practices for efficient development. My dedication to staying abreast of the latest industry trends enables me to create innovative solutions that deliver exceptional user experiences.",
+	"homeBody.btn": "Download CV",
+	"homeBody.interests": "My interests",
+	"homeBody.interests.webDevelopment": "Web development",
+	"homeBody.interests.uIDesign": "User Interface design",
+	"homeBody.interests.webAccessibility": "Web accessibility",
+	"homeBody.interests.frameworksAndTools": "Frameworks and tools",
+	"homeBody.interests.techUpgrades": "Technological upgrades",
+	"homeBody.whatIDo": "What I do?",
+	"homeBody.whatIDo.uIDevelopment": "UI Development",
+	"homeBody.whatIDo.webLayout": "Web layout",
+	"homeBody.whatIDo.responsiveDesign": "Responsive Design",
+	"homeBody.whatIDo.performanceOptimization": "Performance optimization",
+	"homeBody.whatIDo.upgrades": "Maintenance and upgrades",
+
+	"homeBody.whatIDo.uIDevelopment.text": "I'm a passionate user interface (UI) developer. My goal is to create exceptional and engaging digital experiences for users.",
+	"homeBody.whatIDo.webLayout.text": "In my role as a frontend developer, I have worked on translating UX/UI designs into code using markup languages like HTML and styling languages like CSS. Additionally, I have implemented interactions and functionalities using JavaScript to enhance the user experience.",
+	"homeBody.whatIDo.responsiveDesign.text": "I collaborate closely with diverse teams, working alongside UX/UI designers and other developers to ensure the coherence and quality of the final product. My focus is on making websites and applications responsive, seamlessly adapting to different devices and screen sizes.",
+	"homeBody.whatIDo.performanceOptimization.text": "I am skilled in interface optimization, ensuring fast loading times and smooth navigation. In addition to my core skills, I have experience using popular frameworks and libraries like React. I am also familiar with development tools such as Sass and Less, which allow me to write and organize CSS code efficiently.",
+	"homeBody.whatIDo.upgrades.text": "I have the ability to effectively maintain existing interfaces, fix bugs, implement enhancements, and uphold optimal functionality and appearance over time. I am committed to continuously learning and applying best practices in this ever-evolving field.",
+
+	"resumeBody.header": "Resume",
+
+	"resumeBody.education": "Education",
+
+	"resumeBody.education.currentTime": "{time} - Current",
+	"resumeBody.education.universityName": "University of {university}",
+
+	"resumeBody.education.technician": "Software development technician",
+	"resumeBody.education.technician.text": "This is where I began my journey as a developer, gaining knowledge in the fundamental principles of programming and learning to work with languages like HTML, CSS, Python, and JavaScript.",
+
+	"resumeBody.education.engineering": "Systems engineering",
+	"resumeBody.education.engineering.text": "I started my career in Systems Engineering, delving even deeper into the world of technology. My main goal is to obtain my engineering degree, making the most of this opportunity to acquire solid knowledge and practical skills in the field of engineering and technology.",
+
+	"resumeBody.education.frontend": "Front-End specialization",
+	"resumeBody.education.frontend.text": "I was able to apply my knowledge in practical projects and gain experience in web application development using React. This experience has given me a solid foundation to continue growing and exploring new advances in web application development.",
+
+	"resumeBody.experience": "Experience",
+
+	"resumeBody.experience.system": "Systems technician",
+	"resumeBody.experience.system.text": "As a systems technician, I faced exciting challenges and constant learning experiences. I delved into problem-solving, providing technical support, and enhancing IT infrastructure. Each day is an opportunity to apply my knowledge, collaborate as a team, and grow professionally.",
+
+	"resumeBody.skills": "Coding Skills",
+	"resumeBody.knowledges": "Knowledges and skills",
+
+	"resumeBody.knowledges.analyticalThinking": "Analytical thinking",
+	"resumeBody.knowledges.flexibility": "Flexibility",
+	"resumeBody.knowledges.responsive": "Responsive Design",
+	"resumeBody.knowledges.selfLearning": "Self-learning",
+	"resumeBody.knowledges.git": "Git / Github",
+	"resumeBody.knowledges.agile": "Agile",
+	"resumeBody.knowledges.scrum": "Scrum",
+	"resumeBody.knowledges.teamwork": "Teamwork",
+	"resumeBody.knowledges.leadership": "Leadership",
+	"resumeBody.knowledges.organization": "Organization",
+	"resumeBody.knowledges.innovation": "Innovation",
+
+	"resumeBody.languages": "Languages",
+	"resumeBody.languages.es": "Spanish: (Native)",
+	"resumeBody.languages.en": "English: (professional working proficiency)",
+
+	"resumeBody.certificates": "Certificates"
+}

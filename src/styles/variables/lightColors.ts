@@ -1,0 +1,8 @@
+export const primaryColor = '#3da9fc'
+export const secondaryColor = '#90b4ce'
+export const bgColor = '#fffffe'
+export const headlineColor = '#094067'
+export const paragraphColor = '#5f6c7b'
+export const tertiaryColor = '#ef4565'
+export const white = '#ffffff'
+export const black = '#0f0f0f'
