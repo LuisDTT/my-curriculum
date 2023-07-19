@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import { ErrorPage } from '../pages/ErrorPage'
 import { Root } from '../pages/Root'
 import { projectLoader } from '../pages/ProjectInfo'
@@ -10,7 +10,7 @@ const Portfolio = lazy(() => import('../pages/Portfolio'))
 const ProjectInfo = lazy(() => import('../pages/ProjectInfo'))
 const Contact = lazy(() => import('../pages/Contact'))
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
 	{
 		path: '/',
 		element: <Root />,
