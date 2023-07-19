@@ -9,17 +9,8 @@ export const ContainerStyles = styled.div<Props>`
 	display: grid;
 	grid-template-columns: minmax(300px, 380px) minmax(1150px, 1fr);
 
-	@media screen and (max-width: 1445px) {
-		grid-template-columns: minmax(235px, 380px) minmax(460px, 1fr);
-	}
-
-	@media screen and (max-width: 720px) {
-		grid-template-columns: minmax(200px, 1fr);
-		position: relative;
-		z-index: 10;
-	}
 	main {
-		position: ${({ $positionFixed }) => $positionFixed || 'relative'};
+		position: relative;
 		z-index: 1;
 		.body {
 			height: 100%;
@@ -74,6 +65,19 @@ export const ContainerStyles = styled.div<Props>`
 			box-shadow: 0px 0px 146px 60px ${({ theme }) => theme.colors.tertiary};
 			left: 45%;
 			bottom: 30%;
+		}
+	}
+
+	@media screen and (max-width: 1445px) {
+		grid-template-columns: minmax(235px, 380px) minmax(460px, 1fr);
+	}
+
+	@media screen and (max-width: 720px) {
+		grid-template-columns: minmax(200px, 1fr);
+		position: relative;
+		z-index: 10;
+		main {
+			position: ${({ $positionFixed }) => $positionFixed || 'relative'};
 		}
 	}
 `

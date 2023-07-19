@@ -28,8 +28,7 @@ export const getDesignTokens = (mode: PaletteMode): ThemeOptions => ({
 						main: secondaryColor
 					},
 					text: {
-						primary: paragraphColor,
-						secondary: white
+						primary: paragraphColor
 					},
 
 					custom: {

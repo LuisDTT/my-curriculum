@@ -13,9 +13,7 @@ export const ToggleMenu = ({ menuToggle, isActive }: Props) => {
 			<Button
 				onClick={menuToggle}
 				sx={(theme) => ({
-					color: isActive
-						? theme.palette.text.secondary
-						: theme.palette.primary.contrastText
+					color: isActive ? '#fff' : theme.palette.primary.contrastText
 				})}
 				size={'large'}
 				startIcon={!isActive ? <AiOutlineMenuUnfold /> : <AiOutlineMenuFold />}
