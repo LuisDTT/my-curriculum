@@ -1,12 +1,6 @@
-type TranslateContent = {
-	idText: string
-	defaultText: string
-	value?: {}
-}
-
 interface Content {
-	heading: string | TranslateContent
-	paragraph: string | TranslateContent
+	heading: string | JSX.Element
+	paragraph: string | JSX.Element
 }
 
 export type TimelineData = Array<{

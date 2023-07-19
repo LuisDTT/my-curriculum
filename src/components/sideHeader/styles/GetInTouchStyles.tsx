@@ -9,8 +9,9 @@ export const GetInTouchStyles = styled.div`
 		return `solid 3px ${theme.colors.white} `
 	}};
 	border-radius: 8px;
-	padding: 18px 0;
+	/* padding: 18px 0; */
 	width: 90%;
+	height: 70px;
 	&:hover {
 		background-color: ${({ theme }) => theme.colors.transparentColors.primary};
 	}
@@ -20,5 +21,14 @@ export const GetInTouchStyles = styled.div`
 		color: ${({ theme }) => {
 			return theme.colors.white
 		}};
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 `

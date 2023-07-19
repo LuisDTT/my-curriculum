@@ -36,14 +36,16 @@ export const lightTheme: DefaultTheme = {
 			secondary: hexToRgba(secondaryColor, '0.83'),
 			bg: hexToRgba(bgColor, '0.80'),
 			shadowColor: hexToRgba(primaryColor, '.25'),
-			white: hexToRgba(white, '.2')
+			white: hexToRgba(white, '.2'),
+			projectCardHover: hexToRgba(headlineColor, '.50')
 		},
 		boxShadow: {
 			primary: hexToRgba(black, '.25')
 		},
 		others: {
 			headline: black,
-			primaryText: white
+			primaryText: white,
+			icons: primaryColor
 		},
 		mode: 'light'
 	},
@@ -67,14 +69,16 @@ export const darkTheme: DefaultTheme = {
 			headline: hexToRgba(darkHeadlineColor, '.83'),
 			bg: hexToRgba(darkBgColor, '.65'),
 			shadowColor: hexToRgba(darkSecondaryColor, '.1'),
-			white: hexToRgba(white, '.05')
+			white: hexToRgba(white, '.05'),
+			projectCardHover: hexToRgba(darkBgColor, '.50')
 		},
 		boxShadow: {
 			primary: hexToRgba(white, '.25')
 		},
 		others: {
 			headline: white,
-			primaryText: white
+			primaryText: white,
+			icons: darkSecondaryColor
 		},
 		mode: 'dark'
 	},

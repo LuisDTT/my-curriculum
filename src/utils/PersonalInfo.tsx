@@ -1,13 +1,13 @@
 import { FormattedMessage } from 'react-intl'
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { DataList, SkillsList } from '../interfaces/personalInfo'
-import { TimelineData } from '../interfaces/customTimeLine'
 import {
 	TbBrandJavascript,
 	TbBrandReact,
 	TbBrandHtml5,
 	TbBrandCss3,
-	TbBrandGit
+	TbBrandGit,
+	TbBrandTypescript
 } from 'react-icons/tb'
 
 const Interests: DataList = [
@@ -126,84 +126,6 @@ const WhatIDo: DataList = [
 	}
 ]
 
-const EducationList: TimelineData = [
-	{
-		leftContent: {
-			heading: '2020 - 2022',
-			paragraph: 'SENA'
-		},
-		rightContent: {
-			heading: {
-				idText: 'resumeBody.education.technician',
-				defaultText: 'Software development technician'
-			},
-			paragraph: {
-				idText: 'resumeBody.education.technician.text',
-				defaultText: 'Text about me'
-			}
-		}
-	},
-	{
-		leftContent: {
-			heading: {
-				defaultText: '2022 - Current',
-				idText: 'resumeBody.education.currentTime',
-				value: { time: '2022' }
-			},
-			paragraph: {
-				defaultText: 'University of UNICOLOMBO',
-				idText: 'resumeBody.education.universityName',
-				value: { university: 'UNICOLOMBO' }
-			}
-		},
-		rightContent: {
-			heading: {
-				idText: 'resumeBody.education.engineering',
-				defaultText: 'System Engineering'
-			},
-			paragraph: {
-				idText: 'resumeBody.education.engineering.text',
-				defaultText: 'Text about me'
-			}
-		}
-	},
-	{
-		leftContent: {
-			heading: '2022 - 2023',
-			paragraph: 'ONE - Oracle Next Education'
-		},
-		rightContent: {
-			heading: {
-				idText: 'resumeBody.education.frontend',
-				defaultText: 'Front-End specialization'
-			},
-			paragraph: {
-				idText: 'resumeBody.education.frontend.text',
-				defaultText: 'Text about me'
-			}
-		}
-	}
-]
-
-const ExperienceList: TimelineData = [
-	{
-		rightContent: {
-			heading: {
-				defaultText: 'Systems Technician',
-				idText: 'resumeBody.experience.system'
-			},
-			paragraph: {
-				defaultText: 'Text about me',
-				idText: 'resumeBody.experience.system.text'
-			}
-		},
-		leftContent: {
-			heading: '2022',
-			paragraph: 'Bienestar IPS'
-		}
-	}
-]
-
 const mySocialNetworks = [
 	{
 		id: 's1',
@@ -216,12 +138,6 @@ const mySocialNetworks = [
 		name: "Luis' Github",
 		link: 'https://github.com/LuisDTT',
 		icon: <AiFillGithub />
-	},
-	{
-		id: 's3',
-		name: "Luis' Instagram",
-		link: 'https://www.instagram.com/luis_torresdev/',
-		icon: <AiFillInstagram />
 	}
 ]
 
@@ -234,9 +150,15 @@ const mySkills: SkillsList = [
 		borderColor: '#61dbfb'
 	},
 	{
+		textColor: '#fff',
+		bgColor: '#007ACC',
+		name: 'TypeScript',
+		icon: <TbBrandTypescript />
+	},
+	{
 		textColor: '#000',
 		bgColor: '#f7df1e',
-		name: 'Javascript',
+		name: 'JavaScript',
 		icon: <TbBrandJavascript />
 	},
 	{
@@ -260,6 +182,7 @@ const mySkills: SkillsList = [
 ]
 
 const myKnowledges = [
+	'Eslint / Prettier',
 	<FormattedMessage
 		id="resumeBody.knowledges.analyticalThinking"
 		defaultMessage="Analytical thinking"
@@ -305,11 +228,10 @@ const myLanguages = [
 	<FormattedMessage id="resumeBody.languages.es" defaultMessage="Spanish" />,
 	<FormattedMessage id="resumeBody.languages.en" defaultMessage="English" />
 ]
+
 export {
 	Interests,
 	WhatIDo,
-	EducationList,
-	ExperienceList,
 	mySocialNetworks,
 	mySkills,
 	myKnowledges,

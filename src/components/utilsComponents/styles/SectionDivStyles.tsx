@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 
-export const ContainerStyle = styled.div`
+export const ContainerStyle = styled.article`
 	h6 {
 		color: ${({ theme }) => theme.colors.headline};
 		font-weight: 600;

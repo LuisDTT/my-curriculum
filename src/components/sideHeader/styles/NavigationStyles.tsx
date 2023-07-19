@@ -14,7 +14,7 @@ const slideTop = keyframes`
 	
 `
 
-export const Nav = styled.nav`
+export const NavStyles = styled.nav`
 	ul {
 		display: flex;
 		flex-wrap: wrap;
@@ -44,15 +44,15 @@ export const Nav = styled.nav`
 				background-color: ${({ theme }) => theme.colors.primary};
 				font-size: 26px;
 				border-radius: 50%;
-				height: 50px;
-				width: 50px;
+				height: 55px;
+				width: 55px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				cursor: pointer;
 				transition: background-color 0.15s ease-in-out;
 				&:hover {
-					opacity: 0.8;
+					opacity: 0.7;
 				}
 				&:active {
 					opacity: 1;
@@ -78,7 +78,7 @@ export const Nav = styled.nav`
 	}
 `
 
-export const Label = styled.span`
+export const LabelStyles = styled.span`
 	background-color: ${({ theme }) => theme.colors.transparentColors.headline};
 	text-transform: uppercase;
 	position: absolute;

@@ -1,10 +1,10 @@
-import { Label, Nav } from './styles/NavigationStyles'
+import { LabelStyles, NavStyles } from './styles/NavigationStyles'
 import { Menus } from '../../utils/Menus'
 import { NavLink } from 'react-router-dom'
 
 export const Navigation = (): JSX.Element => {
 	return (
-		<Nav>
+		<NavStyles>
 			<ul>
 				{Menus.map((menu) => {
 					return (
@@ -13,16 +13,16 @@ export const Navigation = (): JSX.Element => {
 								to={menu.pathName}
 								className={({ isActive }) => (isActive ? 'active' : '')}
 							>
-								<Label className="show-label">
+								<LabelStyles className="show-label">
 									{menu.name}
 									<span className="arrow"></span>
-								</Label>
+								</LabelStyles>
 								<span className="icon">{menu.icon}</span>
 							</NavLink>
 						</li>
 					)
 				})}
 			</ul>
-		</Nav>
+		</NavStyles>
 	)
 }

@@ -102,8 +102,8 @@ export const IllustrationStyle = styled.div`
 		height: 100%;
 		position: absolute;
 		&-moon {
-			top: -200px;
-			right: -200px;
+			top: -220px;
+			right: -220px;
 		}
 
 		&-squares {

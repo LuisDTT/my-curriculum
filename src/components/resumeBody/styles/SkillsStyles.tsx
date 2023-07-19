@@ -14,23 +14,6 @@ export const SkillsStyles = styled.ul`
 	gap: 10px;
 `
 
-export const ItemsStyles = styled.ul`
-	list-style: none;
-	padding: 0;
-	display: flex;
-	gap: 10px;
-	flex-wrap: wrap;
-	li {
-		${({ theme }) =>
-			`color : ${theme.colors.others.primaryText}; 
-			background-color: ${theme.colors.primary};`}
-		border-radius: 20px;
-		padding: 8px 15px;
-		text-transform: capitalize;
-		text-align: center;
-	}
-`
-
 export const SkillItemStyles = styled.li<{
 	$bgColor: string
 	$textColor: string

@@ -21,8 +21,9 @@ export const AboutSection = () => {
 							? 'desarrollador en React...'
 							: 'React Developer...'
 					]}
-					delaySpeed={2000}
-					typeSpeed={30}
+					delaySpeed={9900}
+					typeSpeed={65}
+					deleteSpeed={25}
 					loop
 					cursor
 					cursorStyle={'_'}
@@ -37,7 +38,7 @@ export const AboutSection = () => {
 			<Button
 				variant="contained"
 				sx={(theme) => ({
-					color: 'text.secondary',
+					color: 'custom.buttonText',
 					px: 5,
 					py: 1.2,
 					fontFamily: theme.typography.fontFamily

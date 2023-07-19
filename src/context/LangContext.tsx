@@ -30,8 +30,8 @@ const LangProvider = ({ children }: LangProviderProps) => {
 			defaultLangMsg = EnglishLang
 		}
 	} else {
-		defaultLocale = 'en-US'
-		defaultLangMsg = EnglishLang
+		defaultLocale = 'es-MX'
+		defaultLangMsg = SpanishLang
 	}
 	const [langMsg, setLangMsg] = useState(defaultLangMsg)
 	const [locale, setLocale] = useState(defaultLocale)
@@ -49,9 +49,9 @@ const LangProvider = ({ children }: LangProviderProps) => {
 				localStorage.setItem('lang', lang)
 				break
 			default:
-				setLangMsg(EnglishLang)
-				setLocale('en-US')
-				localStorage.setItem('lang', 'en-US')
+				setLangMsg(SpanishLang)
+				setLocale('es-MX')
+				localStorage.setItem('lang', 'es-MX')
 		}
 	}
 	return (

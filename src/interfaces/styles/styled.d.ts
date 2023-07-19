@@ -17,6 +17,7 @@ declare module 'styled-components' {
 				bg: string
 				shadowColor: string
 				white: string
+				projectCardHover: string
 			}
 			boxShadow: {
 				primary: string
@@ -24,6 +25,7 @@ declare module 'styled-components' {
 			others: {
 				headline: string
 				primaryText: string
+				icons: string
 			}
 			mode: string
 		}

@@ -6,6 +6,8 @@ interface Props {
 	header?: {
 		tag: ElementType
 		content: JSX.Element | string
+		defaultAccentStyle?: boolean
+		customAccentStyle?: React.ReactNode
 	}
 	children: JSX.Element
 	row?: boolean
@@ -17,7 +19,8 @@ export const SectionContainer = ({ header, children, row }: Props) => {
 			{header && (
 				<Typography variant="h3" className="title" component={header.tag}>
 					{header.content}
-					<span className="accent"></span>
+					{header.defaultAccentStyle && <span className="accent"></span>}
+					{header.customAccentStyle}
 				</Typography>
 			)}
 			{children}

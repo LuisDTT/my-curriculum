@@ -1,5 +1,5 @@
 declare module '@mui/material/styles' {
-	export interface PaletteOptions {
+	interface ThemeOptions {
 		custom: {
 			primary: string
 			transparentColors: {

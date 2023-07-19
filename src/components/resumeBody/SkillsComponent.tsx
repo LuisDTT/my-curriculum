@@ -1,6 +1,5 @@
 import {
 	ContainerSkillsStyles,
-	ItemsStyles,
 	SkillItemStyles,
 	SkillsStyles
 } from './styles/SkillsStyles'
@@ -11,6 +10,7 @@ import { Typography } from '@mui/material'
 import { SkillsList } from '../../interfaces/personalInfo'
 import { myKnowledges, myLanguages, mySkills } from '../../utils/PersonalInfo'
 import { FormattedMessage } from 'react-intl'
+import { Items } from '../utilsComponents/Items'
 
 export const SkillsComponent = () => {
 	return (
@@ -20,7 +20,7 @@ export const SkillsComponent = () => {
 					<FormattedMessage id="resumeBody.skills" defaultMessage="Skills" />
 				}
 			>
-				<Skills SkillList={mySkills} />
+				<Skills skillList={mySkills} />
 			</SkillsSet>
 
 			<Knowledges
@@ -48,13 +48,13 @@ export const SkillsComponent = () => {
 }
 
 interface SkillsProps {
-	SkillList: SkillsList
+	skillList: SkillsList
 }
 
-const Skills = ({ SkillList }: SkillsProps) => {
+const Skills = ({ skillList }: SkillsProps) => {
 	return (
 		<SkillsStyles>
-			{SkillList.map((item, index) => (
+			{skillList.map((item, index) => (
 				<SkillItemStyles
 					$bgColor={item.bgColor}
 					$textColor={item.textColor}
@@ -68,20 +68,5 @@ const Skills = ({ SkillList }: SkillsProps) => {
 				</SkillItemStyles>
 			))}
 		</SkillsStyles>
-	)
-}
-
-interface ItemsProps {
-	itemList: (JSX.Element | string)[]
-}
-const Items = ({ itemList }: ItemsProps) => {
-	return (
-		<ItemsStyles>
-			{itemList.map((item, index) => (
-				<Typography key={index} variant="body1" component={'li'}>
-					{item}
-				</Typography>
-			))}
-		</ItemsStyles>
 	)
 }

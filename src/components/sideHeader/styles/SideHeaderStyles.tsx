@@ -59,7 +59,7 @@ export const HeaderStyles = styled.header<HeaderStylesProps>`
 		z-index: 30;
 		animation: ${({ $showHeader }) =>
 				$showHeader ? scaleInHorLeft : scaleOutHorLeft}
-			0.2s both;
+			0.05s both;
 	}
 	.bg {
 		background-color: ${({ theme }) => theme.colors.transparentColors.primary};
@@ -110,5 +110,6 @@ export const ProfileStyles = styled.div`
 		width: 100%;
 		height: 100%;
 		border-radius: 50%;
+		object-fit: cover;
 	}
 `

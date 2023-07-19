@@ -1,19 +1,42 @@
-import {
-	Route,
-	createBrowserRouter,
-	createRoutesFromElements
-} from 'react-router-dom'
-import { Home } from '../pages/Home'
-import { Resume } from '../pages/Resume'
-import { Error404 } from '../pages/Error404'
+import { createBrowserRouter } from 'react-router-dom'
+import { ErrorPage } from '../pages/ErrorPage'
+import { Root } from '../pages/Root'
+import { projectLoader } from '../pages/ProjectInfo'
+import { lazy } from 'react'
 
-export const router = createBrowserRouter(
-	createRoutesFromElements(
-		<>
-			<Route path="/" element={<Home />} errorElement={<Error404 />} />
-			<Route path="/resume" element={<Resume />} />
-			{/* <Route path="/portfolio" element={<Portfolio />} /> */}
-			{/* <Route path="/contact" element={<Contact />} /> */}
-		</>
-	)
-)
+const Home = lazy(() => import('../pages/Home'))
+const Resume = lazy(() => import('../pages/Resume'))
+const Portfolio = lazy(() => import('../pages/Portfolio'))
+const ProjectInfo = lazy(() => import('../pages/ProjectInfo'))
+const Contact = lazy(() => import('../pages/Contact'))
+
+export const router = createBrowserRouter([
+	{
+		path: '/',
+		element: <Root />,
+		errorElement: <ErrorPage />,
+		children: [
+			{
+				index: true,
+				element: <Home />
+			},
+			{
+				path: 'resume',
+				element: <Resume />
+			},
+			{
+				path: 'portfolio',
+				element: <Portfolio />
+			},
+			{
+				path: 'portfolio/:projectId',
+				element: <ProjectInfo />,
+				loader: projectLoader
+			},
+			{
+				path: 'contact',
+				element: <Contact />
+			}
+		]
+	}
+])

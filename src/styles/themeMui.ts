@@ -28,15 +28,16 @@ export const getDesignTokens = (mode: PaletteMode): ThemeOptions => ({
 						main: secondaryColor
 					},
 					text: {
-						primary: paragraphColor,
-						secondary: white
+						primary: paragraphColor
 					},
 
 					custom: {
 						primary: primaryColor,
 						transparentColors: {
 							primary: hexToRgba(primaryColor, '.3')
-						}
+						},
+						buttonText: white,
+						contrast: primaryColor
 					}
 			  }
 			: {
@@ -56,7 +57,9 @@ export const getDesignTokens = (mode: PaletteMode): ThemeOptions => ({
 						primary: white,
 						transparentColors: {
 							primary: hexToRgba(white, '.3')
-						}
+						},
+						buttonText: white,
+						contrast: darkSecondaryColor
 					}
 			  })
 	},

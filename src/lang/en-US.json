@@ -68,5 +68,51 @@
 	"resumeBody.languages.es": "Spanish: (Native)",
 	"resumeBody.languages.en": "English: (professional working proficiency)",
 
-	"resumeBody.certificates": "Certificates"
+	"resumeBody.certificates": "Certificates",
+
+	"portfolioBody.portfolio": "Portfolio",
+	"portfolioBody.personalProject": "Personal Project",
+
+	"back": "back",
+	"portfolioBody.project": "Project",
+	"portfolioBody.technologies": "Technologies",
+	"portfolioBody.productivity": "Productivity",
+	"portfolioBody.eCommerce": "eCommerce",
+	"portfolioBody.otherProject": "Other Projects",
+
+	"portfolioBody.org.date": "May 31th, 2023",
+	"portfolioBody.org.info": "I developed this application, called ORG, in collaboration with the Alura instructors' team. Throughout the process, I received valuable guidance from the experts who provided detailed advice on each functionality and component. In this project, I applied fundamental React concepts such as component creation, efficient rendering, and eventHandlers management.",
+
+	"portfolioBody.stepper": "Alura - Mui Stepper",
+	"portfolioBody.stepper.date": "June 5th, 2023",
+	"portfolioBody.stepper.info": "This application was also developed in collaboration with the Alura LATAM team of instructors. I had the opportunity to explore and apply new and exciting concepts. One of them was the use of user interface (UI) components, which allowed me to implement custom solutions and adapt the application to my specific needs. In particular, to achieve an interactive Stepper on a form, I decided to use the Material UI library. This allowed me to create an intuitive flow of steps to guide users through the form filling process. With the help of the features provided by Material UI, I was able to incorporate the necessary validations to ensure the integrity and accuracy of the data entered.",
+	"portfolioBody.stepper.info2": "So, the Stepper project in React was an enriching opportunity to apply advanced application development concepts, work in a team with experts and use powerful tools like Material UI. I am proud of the end result and excited to continue learning and growing as a developer.",
+
+	"portfolioBody.ageCalc": "Frontend mentor - Age Calculator",
+	"portfolioBody.ageCalc.date": "April 15th, 2023",
+	"portfolioBody.ageCalc.info": "This project was done as part of my personal initiative to strengthen my knowledge in React. I took this Front-end Mentor challenge, which allowed me to put into practice key concepts such as the use of custom hooks, functions and APIs. In addition, I was able to delve deeper into state handling to effectively display and manage errors.",
+
+	"portfolioBody.tasks": "Tasks app",
+	"portfolioBody.tasks.date": "September 22th, 2022",
+	"portfolioBody.tasks.info": "This application was one of my first projects developed with React. It's where I gained a solid understanding of React fundamentals such as hooks, context, components, and state functions. Additionally, I was able to leverage the Tailwind library to stylishly, quickly, and efficiently customize my components.",
+
+	"portfolioBody.tipCalc": "Frontend mentor - Tip Calculator",
+	"portfolioBody.tipCalc.date": "February 15th, 2022",
+	"portfolioBody.tipCalc.info": "One of my first applications developed with vanilla JavaScript was a milestone in my learning journey with this marvelous language. During this project, I gained essential knowledge about handling the DOM and managing events, enabling me to create a high-quality interactive experience. Additionally, I utilized Sass, a CSS preprocessor, to apply outstanding styles to the page, imbuing it with unique functionalities.",
+
+	"contactBody.contact": "Contact",
+
+	"contact.form.name": "Name",
+	"contact.form.email": "Email",
+	"contact.form.message": "Message",
+
+	"contact.form.nameError": "Please enter a valid name",
+	"contact.form.emailError": "Please enter a valid email",
+	"contact.form.messageError": "This field cannot exceed 500 characters",
+
+	"validation.emptyField": "This field cannot be empty",
+
+	"contact.form.send": "SEND MESSAGE",
+	"contact.form.thanks": "Thank you for contacting me!",
+	"contact.form.responseInfo": "The information has been sent correctly"
 }

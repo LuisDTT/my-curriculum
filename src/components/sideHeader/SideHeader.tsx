@@ -1,11 +1,11 @@
 import { Navigation } from './Navigation'
 import { HeaderStyles, ProfileStyles } from './styles/SideHeaderStyles'
 import { SocialNetworks } from './SocialNetworks'
-import { GetInTouchStyles } from './styles/GetInTouchStyles'
 import { FormattedMessage } from 'react-intl'
 import { TranslateButton } from './TranslateButton'
 import { Typography } from '@mui/material'
 import avatar from '../../assets/images/myphoto.png'
+import { GetInTouch } from './GetInTouch'
 
 interface Props {
 	showHeader: boolean
@@ -31,14 +31,7 @@ export const SideHeader = ({ showHeader }: Props): JSX.Element => {
 						<SocialNetworks />
 					</div>
 					<Navigation />
-					<GetInTouchStyles>
-						<Typography variant="h5" component="p" className="text">
-							<FormattedMessage
-								defaultMessage="Get in touch"
-								id="sideHeader.getInTouch"
-							/>
-						</Typography>
-					</GetInTouchStyles>
+					<GetInTouch />
 				</div>
 			</div>
 		</HeaderStyles>

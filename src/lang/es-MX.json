@@ -1,4 +1,5 @@
 {
+	"back": "Atrás",
 	"sideHeader.jobTitle": "Desarrollador - Front-end",
 	"sideHeader.menu.home": "Inicio",
 	"sideHeader.menu.resume": "Estudios",
@@ -66,5 +67,49 @@
 	"resumeBody.languages.es": "Español: (Nativo)",
 	"resumeBody.languages.en": "Ingles: (capacidad de trabajo profesional)",
 
-	"resumeBody.certificates": "Certificados"
+	"resumeBody.certificates": "Certificados",
+
+	"portfolioBody.portfolio": "Portafolio",
+	"portfolioBody.personalProject": "Proyectos Personales",
+
+	"portfolioBody.project": "Proyecto",
+	"portfolioBody.technologies": "Tecnologias",
+	"portfolioBody.productivity": "Productividad",
+	"portfolioBody.eCommerce": "eCommerce",
+	"portfolioBody.otherProject": "Otros proyectos",
+
+	"portfolioBody.org.date": "31 de Mayo 2023 ",
+	"portfolioBody.org.info": "Desarrollé esta aplicación, llamada ORG, en colaboración con el equipo de instructores de Alura. Durante el proceso, recibí valiosa guía por parte de los expertos, quienes me brindaron asesoramiento detallado en cada funcionalidad y componente. En este proyecto, apliqué conceptos fundamentales de React, tales como la creación de componentes, el renderizado eficiente y la gestión de eventHandlers.",
+
+	"portfolioBody.stepper": "Alura - Seguimiento de formulario",
+	"portfolioBody.stepper.date": "5 de Junio de 2023",
+	"portfolioBody.stepper.info": "Esta aplicación también fue desarrollada con el equipo de instructores de Alura LATAM. Tuve la oportunidad de aplicar conceptos nuevos. Uno de ellos fue el uso de componentes de interfaz de usuario (UI), que me permitieron implementar soluciones personalizadas y adaptar la aplicación a mis necesidades específicas. Para lograr un Stepper interactivo en un formulario, decidí utilizar la biblioteca Material UI. Esto me permitió crear un flujo de pasos intuitivo para guiar a los usuarios a través del proceso de llenado del formulario. Con la ayuda de las características proporcionadas por Material UI, pude incorporar las validaciones necesarias para asegurar la integridad y la precisión de los datos ingresados.",
+	"portfolioBody.stepper.info2": "En resumen, el proyecto Stepper en React fue una oportunidad enriquecedora para aplicar conceptos avanzados de desarrollo de aplicaciones, trabajar en equipo con expertos y utilizar herramientas poderosas como Material UI. Estoy orgulloso del resultado final y emocionado por seguir aprendiendo y creciendo como desarrollador.",
+
+	"portfolioBody.ageCalc": "Frontend mentor - Calculadora de edad",
+	"portfolioBody.ageCalc.date": "15 de abril de 2023",
+	"portfolioBody.ageCalc.info": "Este proyecto fue realizado como parte de mi iniciativa personal para fortalecer mis conocimientos en React. Tomé este desafío de Front-end Mentor, que me permitió poner en práctica conceptos clave como el uso de hooks personalizados, funciones y APIs. Además, pude profundizar en el manejo del estado para mostrar y gestionar errores de manera efectiva.",
+
+	"portfolioBody.tasks": "App de tareas",
+	"portfolioBody.tasks.date": "22 de Septiembre de 2022",
+	"portfolioBody.tasks.info": "Esta aplicación fue uno de mis primeros proyectos desarrollados con React. Aquí adquirí los fundamentos de React, como los hooks, el contexto, los componentes y las funciones de estado. Además, pude aprovechar la biblioteca de Tailwind para estilizar mis componentes de manera atractiva, rápida y eficiente.",
+
+	"portfolioBody.tipCalc": "Frontend mentor - Calculadora de propinas",
+	"portfolioBody.tipCalc.date": "15 de Febrero de 2022",
+	"portfolioBody.tipCalc.info": "Una de mis primeras aplicaciones desarrolladas en JavaScript vanilla fue un hito en mi aprendizaje de este maravilloso lenguaje. Durante este proyecto, adquirí conocimientos fundamentales sobre el manejo del DOM y la gestión de eventos, lo que me permitió crear una experiencia interactiva de calidad. Además, utilicé Sass, un preprocesador de CSS, para aplicar estilos excepcionales a la página, dotándola de funcionalidades únicas.",
+
+	"contactBody.contact": "Contacto",
+	"contact.form.name": "Nombre",
+	"contact.form.email": "Email",
+	"contact.form.message": "Mensaje",
+
+	"contact.form.nameError": "Por favor ingrese un nombre válido",
+	"contact.form.emailError": "Por favor ingrese un email válido",
+	"contact.form.messageError": "Este campo no puede superar más de 500 caracteres.",
+
+	"validation.emptyField": "Este campo no puede estar vacío",
+
+	"contact.form.send": "ENVIAR MENSAJE",
+	"contact.form.thanks": "¡Gracias por contactarme!",
+	"contact.form.responseInfo": "¡La información se ha enviado correctamente!"
 }
