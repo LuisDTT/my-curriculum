@@ -9,6 +9,7 @@ export const BelowContainerStyles = styled.div`
 		color: ${({ theme }) => theme.colors.paragraph};
 		display: flex;
 		gap: 5px;
+		flex-wrap: wrap;
 		align-items: center;
 		a {
 			color: ${({ theme }) => theme.colors.transparentColors.secondary};
