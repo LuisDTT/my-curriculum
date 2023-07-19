@@ -37,7 +37,6 @@ interface HeaderStylesProps {
 }
 
 export const HeaderStyles = styled.header<HeaderStylesProps>`
-	/* position: sticky; */
 	width: 100%;
 	min-height: 700px;
 	background-image: url(${bgImage});
@@ -59,7 +58,7 @@ export const HeaderStyles = styled.header<HeaderStylesProps>`
 		z-index: 30;
 		animation: ${({ $showHeader }) =>
 				$showHeader ? scaleInHorLeft : scaleOutHorLeft}
-			0.05s both;
+			0.01s both;
 	}
 	.bg {
 		background-color: ${({ theme }) => theme.colors.transparentColors.primary};

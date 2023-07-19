@@ -2,7 +2,11 @@ import { LabelStyles, NavStyles } from './styles/NavigationStyles'
 import { Menus } from '../../utils/Menus'
 import { NavLink } from 'react-router-dom'
 
-export const Navigation = (): JSX.Element => {
+interface Props {
+	menuToggle?: () => void
+}
+
+export const Navigation = ({ menuToggle }: Props): JSX.Element => {
 	return (
 		<NavStyles>
 			<ul>
@@ -12,6 +16,7 @@ export const Navigation = (): JSX.Element => {
 							<NavLink
 								to={menu.pathName}
 								className={({ isActive }) => (isActive ? 'active' : '')}
+								onClick={menuToggle}
 							>
 								<LabelStyles className="show-label">
 									{menu.name}

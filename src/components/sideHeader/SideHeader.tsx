@@ -9,9 +9,10 @@ import { GetInTouch } from './GetInTouch'
 
 interface Props {
 	showHeader: boolean
+	menuToggle?: () => void
 }
 
-export const SideHeader = ({ showHeader }: Props): JSX.Element => {
+export const SideHeader = ({ showHeader, menuToggle }: Props): JSX.Element => {
 	return (
 		<HeaderStyles $showHeader={showHeader}>
 			<div className="bg">
@@ -30,8 +31,8 @@ export const SideHeader = ({ showHeader }: Props): JSX.Element => {
 						</Typography>
 						<SocialNetworks />
 					</div>
-					<Navigation />
-					<GetInTouch />
+					<Navigation menuToggle={menuToggle} />
+					<GetInTouch menuToggle={menuToggle} />
 				</div>
 			</div>
 		</HeaderStyles>

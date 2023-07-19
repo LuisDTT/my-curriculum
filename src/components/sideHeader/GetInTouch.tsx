@@ -3,10 +3,14 @@ import { GetInTouchStyles } from './styles/GetInTouchStyles'
 import { Typography } from '@mui/material'
 import { FormattedMessage } from 'react-intl'
 
-export const GetInTouch = () => {
+interface Props {
+	menuToggle?: () => void
+}
+
+export const GetInTouch = ({ menuToggle }: Props) => {
 	return (
 		<GetInTouchStyles>
-			<Link to={'/contact'}>
+			<Link to={'/contact'} onClick={menuToggle}>
 				<Typography variant="h5" component="p" className="text">
 					<FormattedMessage
 						defaultMessage="Get in touch"

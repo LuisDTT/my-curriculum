@@ -1,6 +1,10 @@
 import { styled } from 'styled-components'
 
-export const ContainerStyles = styled.div`
+interface Props {
+	$positionFixed?: 'fixed' | null
+}
+
+export const ContainerStyles = styled.div<Props>`
 	min-height: 100vh;
 	display: grid;
 	grid-template-columns: minmax(300px, 380px) minmax(1150px, 1fr);
@@ -15,7 +19,7 @@ export const ContainerStyles = styled.div`
 		z-index: 10;
 	}
 	main {
-		position: relative;
+		position: ${({ $positionFixed }) => $positionFixed || 'relative'};
 		z-index: 1;
 		.body {
 			height: 100%;
