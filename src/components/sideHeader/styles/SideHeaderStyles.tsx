@@ -38,7 +38,6 @@ interface HeaderStylesProps {
 
 export const HeaderStyles = styled.header<HeaderStylesProps>`
 	width: 100%;
-	min-height: 700px;
 	background-image: url(${bgImage});
 	background-repeat: no-repeat;
 	background-position: 70% 50%;
@@ -51,10 +50,12 @@ export const HeaderStyles = styled.header<HeaderStylesProps>`
 	left: 0;
 	overflow-y: auto;
 	z-index: 20;
+	min-height: 700px;
 
 	@media screen and (max-width: 720px) {
-		position: fixed; //
-		bottom: 0; //
+		min-height: 550px;
+		position: fixed;
+		bottom: 0;
 		z-index: 30;
 		animation: ${({ $showHeader }) =>
 				$showHeader ? scaleInHorLeft : scaleOutHorLeft}
@@ -95,7 +96,7 @@ export const HeaderStyles = styled.header<HeaderStylesProps>`
 	}
 `
 
-export const ProfileStyles = styled.div`
+export const AvatarStyles = styled.div`
 	background-color: transparent;
 	border: 5px solid ${({ theme }) => theme.colors.white};
 	border-radius: 50%;
@@ -110,5 +111,10 @@ export const ProfileStyles = styled.div`
 		height: 100%;
 		border-radius: 50%;
 		object-fit: cover;
+	}
+
+	@media screen and (max-width: 375px) {
+		height: 95px;
+		width: 95px;
 	}
 `

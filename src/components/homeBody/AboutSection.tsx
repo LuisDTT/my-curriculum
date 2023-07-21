@@ -1,12 +1,27 @@
 import { AboutSectionStyles } from './styles/AboutSectionStyles'
 import { Button, Typography } from '@mui/material'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { FormattedMessage } from 'react-intl'
 import { Typewriter } from 'react-simple-typewriter'
 import { LangContext } from '../../context/LangContext'
+import myEnglishCV from '../../assets/documents/pdf/luistorrescvEN.pdf'
+import mySpanishCV from '../../assets/documents/pdf/luistorrescvES.pdf'
+import { SuccessAlert } from '../utilsComponents/SuccessAlert'
 
 export const AboutSection = () => {
 	const { lang } = useContext(LangContext)
+	const CV_URL = lang === 'es-MX' ? mySpanishCV : myEnglishCV
+
+	const [openAlert, setOpenAlert] = useState(false)
+
+	const handleClose = () => {
+		setOpenAlert(false)
+	}
+
+	const handleClick = () => {
+		setOpenAlert(true)
+	}
+
 	return (
 		<AboutSectionStyles>
 			<Typography variant="h2" component={'h1'}>
@@ -36,6 +51,9 @@ export const AboutSection = () => {
 				/>
 			</Typography>
 			<Button
+				target="_top"
+				download
+				href={CV_URL}
 				variant="contained"
 				sx={(theme) => ({
 					color: 'custom.buttonText',
@@ -43,11 +61,22 @@ export const AboutSection = () => {
 					py: 1.2,
 					fontFamily: theme.typography.fontFamily
 				})}
+				onClick={handleClick}
 			>
 				<Typography variant="button">
 					<FormattedMessage id="homeBody.btn" defaultMessage={'Download CV'} />
 				</Typography>
 			</Button>
+			<SuccessAlert
+				handleClose={handleClose}
+				open={openAlert}
+				message={
+					<FormattedMessage
+						id="downloadAlertMessage"
+						defaultMessage="The document with the current web language has been downloaded."
+					/>
+				}
+			/>
 		</AboutSectionStyles>
 	)
 }

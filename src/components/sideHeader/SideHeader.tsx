@@ -1,5 +1,5 @@
 import { Navigation } from './Navigation'
-import { HeaderStyles, ProfileStyles } from './styles/SideHeaderStyles'
+import { HeaderStyles, AvatarStyles } from './styles/SideHeaderStyles'
 import { SocialNetworks } from './SocialNetworks'
 import { FormattedMessage } from 'react-intl'
 import { TranslateButton } from './TranslateButton'
@@ -19,9 +19,9 @@ export const SideHeader = ({ showHeader, menuToggle }: Props): JSX.Element => {
 				<div className="main-header">
 					<TranslateButton />
 					<div className="main-header__top">
-						<ProfileStyles>
+						<AvatarStyles>
 							<img src={avatar} alt="Avatar" />
-						</ProfileStyles>
+						</AvatarStyles>
 						<Typography variant="h4">Luis Torres</Typography>
 						<Typography variant="h5">
 							<FormattedMessage

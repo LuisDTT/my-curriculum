@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 
 export const GetInTouchStyles = styled.div`
-	margin-top: 60px;
+	margin-top: 8%;
 	user-select: none;
 	text-align: center;
 	cursor: pointer;

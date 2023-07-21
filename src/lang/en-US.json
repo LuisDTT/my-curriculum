@@ -9,6 +9,7 @@
 	"homeBody.h1": "Hi, I'm ",
 	"homeBody.aboutMe": "Driven by a self-taught mindset, I thrive on constantly expanding my skill set and embracing new technologies. With a deep passion for problem-solving, I approach challenges with a wealth of experience and a solid foundation in best practices for efficient development. My dedication to staying abreast of the latest industry trends enables me to create innovative solutions that deliver exceptional user experiences.",
 	"homeBody.btn": "Download CV",
+	"downloadAlertMessage": "The document with the current web language(English) has been downloaded.",
 	"homeBody.interests": "My interests",
 	"homeBody.interests.webDevelopment": "Web development",
 	"homeBody.interests.uIDesign": "User Interface design",

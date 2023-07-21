@@ -15,28 +15,28 @@ const slideTop = keyframes`
 `
 
 export const NavStyles = styled.nav`
+	width: 100%;
+	margin-top: 20px;
 	ul {
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
 		list-style: none;
-		margin: 0;
+		margin: 0 20px;
 		padding: 0;
+		gap: 5px;
 
 		@media screen and (min-width: 720px) and (max-width: 1565px) {
-			margin-top: 20px;
 			gap: 20px;
-			width: 180px;
 			height: 180px;
 		}
-		.menu {
-			width: 80px;
+		li {
+			width: 22%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			position: relative;
 			@media screen and (max-width: 320px) {
-				margin-bottom: 50px;
+				/* margin-bottom: 50px; */
 			}
 			a {
 				font-family: ${({ theme }) => theme.typography.fontFamily};
@@ -82,9 +82,8 @@ export const LabelStyles = styled.span`
 	background-color: ${({ theme }) => theme.colors.transparentColors.headline};
 	text-transform: uppercase;
 	position: absolute;
-	left: 0;
 	font-size: 12px;
-	width: 100%;
+	width: 90px;
 	border-radius: 10px;
 	padding: 5px 1.5px;
 	display: none;

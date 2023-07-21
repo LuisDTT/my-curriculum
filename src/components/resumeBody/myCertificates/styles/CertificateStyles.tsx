@@ -1,11 +1,13 @@
 import { styled } from 'styled-components'
 
 export const CertificateStyles = styled.div`
-	margin-top: 2rem;
-	gap: 2.5rem;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-	@media screen and (min-width: 1400px) {
-		grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+	position: absolute;
+	height: 100vh;
+	img {
+		margin: 10px;
+		border: 1px solid white;
+		box-sizing: border-box;
+		height: 100%;
+		width: 100%;
 	}
 `

@@ -10,6 +10,7 @@
 	"homeBody.h1": "Hola, Soy ",
 	"homeBody.aboutMe": "Como front-end junior, estoy motivado por una mentalidad autodidacta y siempre busco ampliar mi conjunto de habilidades y adoptar nuevas tecnologías. Me apasiona resolver problemas y enfrento los desafíos utilizando las mejores prácticas para un desarrollo eficiente. Estoy comprometido en mantenerme actualizado con las últimas tendencias de la industria, lo que me permite crear soluciones innovadoras que brindan experiencias de usuario excepcionales.",
 	"homeBody.btn": "Descargar CV",
+	"downloadAlertMessage": "Se ha descargado el documento con el idioma actual (Español).",
 	"homeBody.interests": "Mis intereses",
 	"homeBody.interests.webDevelopment": "Desarrollo web",
 	"homeBody.interests.uIDesign": "Diseño de interfaces de usuario",

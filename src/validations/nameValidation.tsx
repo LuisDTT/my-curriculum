@@ -1,7 +1,7 @@
 import { FormattedMessage } from 'react-intl'
 
 export const validateName = (value: string) => {
-	let regex = /^[a-zA-Z\s]{3,49}$/
+	let regex = /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]+$/
 
 	if (value.length === 0) {
 		return {
