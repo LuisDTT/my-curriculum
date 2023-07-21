@@ -1,20 +1,31 @@
+import { CertificateList } from '../../../interfaces/personalInfo'
 import { FormattedMessage } from 'react-intl'
 import SectionDiv from '../../utilsComponents/SectionDiv'
 import { CertificatesStyles } from './styles/CertificatesStyles'
 import { CertificateBox } from './CertificateBox'
-import senaImage from '../../../assets/images/colleges/sena.png'
-import oneImage from '../../../assets/images/colleges/one.png'
 import { Modal } from '@mui/material'
 import { Certificate } from './Certificate'
 import { useState } from 'react'
-import TechnicianCertificate from '../../../assets/images/myCertificates/softwareTechnician.png'
 
-export const Certificates = () => {
-	const [openModal, setOpenModal] = useState(true)
+interface Props {
+	certificateList: CertificateList
+}
+
+export const Certificates = ({ certificateList }: Props) => {
+	const [modal, setModal] = useState({
+		open: false,
+		modalImage: ''
+	})
 
 	const handleClose = () => {
-		setOpenModal(false)
+		setModal({ ...modal, open: false })
 	}
+
+	const handleClick = (certificateUrl: string) => {
+		console.log(certificateUrl)
+		setModal({ open: true, modalImage: certificateUrl })
+	}
+
 	return (
 		<SectionDiv
 			title={
@@ -26,40 +37,22 @@ export const Certificates = () => {
 		>
 			<>
 				<CertificatesStyles>
-					<CertificateBox
-						certificateDate={'28.08.2022'}
-						college={'SENA'}
-						certificateName={
-							<FormattedMessage id="resumeBody.education.technician" />
-						}
-						bgImage={senaImage}
-						urlCollege="https://www.sena.edu.co/es-co/sena/Paginas/quienesSomos.aspx"
-					/>
-					<CertificateBox
-						urlCollege="https://www.oracle.com/co/education/oracle-next-education/"
-						certificateDate={'06.06.2022'}
-						college={'ONE'}
-						certificateName={'Oracle Next Education F2 T4 Front-end '}
-						bgImage={oneImage}
-					/>
-					<CertificateBox
-						urlCollege="https://www.oracle.com/co/education/oracle-next-education/"
-						certificateDate={'06.06.2022'}
-						college={'ONE'}
-						certificateName={'React'}
-						bgImage={oneImage}
-					/>
-					<CertificateBox
-						urlCollege="https://www.oracle.com/co/education/oracle-next-education/"
-						certificateDate={'19.05.2022'}
-						college={'ONE'}
-						certificateName={'Business Agility'}
-						bgImage={oneImage}
-					/>
+					{certificateList.map((certificate) => (
+						<CertificateBox
+							certificateImage={certificate.imageUrl}
+							urlCollege={certificate.collegeUrl}
+							certificateDate={certificate.date}
+							college={certificate.college}
+							certificateName={certificate.name}
+							bgImage={certificate.collegeImage}
+							handleClick={handleClick}
+							key={certificate.imageUrl}
+						/>
+					))}
 				</CertificatesStyles>
-				<Modal open={openModal} onClose={handleClose}>
+				<Modal open={modal.open} onClose={handleClose}>
 					<>
-						<Certificate imgURL={TechnicianCertificate} />
+						<Certificate imgURL={modal.modalImage} />
 					</>
 				</Modal>
 			</>

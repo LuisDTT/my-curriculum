@@ -7,6 +7,8 @@ interface Props {
 	certificateDate: JSX.Element | string
 	bgImage?: string
 	urlCollege: string
+	handleClick: (certificateImage: string) => void
+	certificateImage: string
 }
 
 export const CertificateBox = ({
@@ -14,7 +16,9 @@ export const CertificateBox = ({
 	certificateName,
 	certificateDate,
 	bgImage,
-	urlCollege
+	urlCollege,
+	handleClick,
+	certificateImage
 }: Props) => {
 	return (
 		<CertificateBoxStyles $bgImage={bgImage}>
@@ -24,7 +28,10 @@ export const CertificateBox = ({
 				</a>
 				{bgImage && <span className="bgImage"></span>}
 			</Typography>
-			<p className="box right-box">
+			<p
+				className="box right-box"
+				onClick={() => handleClick(certificateImage)}
+			>
 				<Typography variant="h6" component="span" className="header-text">
 					{certificateName}
 				</Typography>

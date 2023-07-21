@@ -2,6 +2,7 @@ import { styled } from 'styled-components'
 
 export const SliderStyles = styled.div`
 	margin-top: 20px;
+	width: 100%;
 	ul {
 		list-style: none;
 		display: flex;

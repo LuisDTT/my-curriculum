@@ -11,6 +11,17 @@ export interface Skills {
 	borderColor?: string
 }
 
+export interface Certificate {
+	imageUrl: string
+	date: string
+	college: string
+	name: JSX.Element | string
+	collegeImage: string
+	collegeUrl: string
+}
+
 type SkillsList = Array<Skills>
 
 type DataList = Array<DataObject>
+
+type CertificateList = Array<Certificate>

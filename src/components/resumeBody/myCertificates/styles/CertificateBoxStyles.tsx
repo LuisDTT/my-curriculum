@@ -8,6 +8,10 @@ export const CertificateBoxStyles = styled.div<{ $bgImage?: string }>`
 	border-radius: 15px 0px 0px 15px;
 	box-shadow: 0px 4px 14px 0px ${({ theme }) => theme.colors.boxShadow.primary};
 	overflow: hidden;
+	&:hover {
+		transition: scale 0.19s;
+		scale: 103%;
+	}
 
 	.box {
 	}
@@ -45,11 +49,16 @@ export const CertificateBoxStyles = styled.div<{ $bgImage?: string }>`
 		margin: 15px;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		gap: 20px;
-		/* background-color: ${({ theme }) => theme.colors}; */
+
 		.header-text {
 			color: ${({ theme }) => theme.colors.headline};
 			text-transform: capitalize;
+			&:hover {
+				cursor: pointer;
+				text-decoration: underline;
+			}
 		}
 		.date-text {
 			color: ${({ theme }) => theme.colors.paragraph};

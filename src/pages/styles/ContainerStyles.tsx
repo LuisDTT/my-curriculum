@@ -7,8 +7,7 @@ interface Props {
 export const ContainerStyles = styled.div<Props>`
 	min-height: 700px;
 	display: grid;
-	grid-template-columns: minmax(300px, 380px) 1fr;
-
+	grid-template-columns: minmax(300px, 380px) minmax(500px, 1fr);
 	main {
 		position: relative;
 		z-index: 1;
@@ -69,11 +68,11 @@ export const ContainerStyles = styled.div<Props>`
 	}
 
 	@media screen and (max-width: 1445px) {
-		grid-template-columns: minmax(300px, 380px) minmax(400px, 1fr);
+		grid-template-columns: minmax(300px, 380px) minmax(420px, 1fr);
 	}
 
 	@media screen and (max-width: 720px) {
-		grid-template-columns: 1fr;
+		grid-template-columns: minmax(200px, 1fr);
 		position: relative;
 		z-index: 10;
 		main {

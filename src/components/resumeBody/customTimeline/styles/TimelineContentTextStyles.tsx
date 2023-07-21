@@ -1,10 +1,12 @@
 import { styled } from 'styled-components'
 
 export const LeftContentStyles = styled.div`
-	min-width: 210px;
-
+	min-width: 160px;
+	@media screen and (min-width: 1500px) {
+		min-width: 220px;
+	}
 	@media screen and (max-width: 500px) {
-		min-width: 120px;
+		min-width: 100px;
 	}
 	.heading {
 		color: ${({ theme }) => theme.colors.headline};

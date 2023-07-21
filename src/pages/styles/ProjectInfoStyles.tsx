@@ -1,6 +1,8 @@
 import { styled } from 'styled-components'
 
 export const ProjectInfoStyles = styled.div`
+	width: 100%;
+	height: 100%;
 	.project-paragraph {
 		margin: 2rem 0;
 		color: ${({ theme }) => theme.colors.paragraph};

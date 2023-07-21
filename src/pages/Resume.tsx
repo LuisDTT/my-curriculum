@@ -8,6 +8,7 @@ import { Certificates } from '../components/resumeBody/myCertificates'
 import { EducationList } from '../utils/personalInfo/myEducation'
 import { ExperienceList } from '../utils/personalInfo/myExperience'
 import { Helmet } from 'react-helmet-async'
+import { myCertificates } from '../utils/personalInfo/myCertificates'
 
 export const Resume = () => {
 	return (
@@ -52,7 +53,7 @@ export const Resume = () => {
 						<SkillsComponent />
 					</div>
 					<div className="certificates">
-						<Certificates />
+						<Certificates certificateList={myCertificates} />
 					</div>
 				</ResumeBodyStyles>
 			</SectionContainer>
